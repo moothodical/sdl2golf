@@ -52,6 +52,7 @@ void RenderWindow::Render(Entity& p_entity)
 	dest.y = p_entity.GetY();
 	dest.w = p_entity.GetCurrentFrame().w;
 	dest.h = p_entity.GetCurrentFrame().h;
+
 	SDL_RenderCopy(renderer, p_entity.GetTexture(), &src, &dest);
 }
 
