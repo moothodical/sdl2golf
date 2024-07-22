@@ -17,10 +17,10 @@ int main(int argc, char* args[])
 	RenderWindow window("game", 1280, 720);
 	SDL_Texture* grassTexture = window.LoadTexture("res/gfx/ground_grass_1.png");
 
-	std::vector<Entity> entities = {Entity(0, 0, grassTexture),
-									 Entity(0, 32, grassTexture),
-									 Entity(0, 64, grassTexture),
-									 Entity(0, 96, grassTexture)};
+	std::vector<Entity> entities = {Entity(Vector2f(0, 0), grassTexture),
+									 Entity(Vector2f(0, 32), grassTexture),
+									 Entity(Vector2f(0, 64), grassTexture),
+									 Entity(Vector2f(0, 96), grassTexture)};
 
 	bool gameRunning = true;
 
